@@ -4,8 +4,7 @@ var query = require('./custom_modules/query');
 var logSearch = require('./custom_modules/logSearch');
 //latest returns 10 most recent searches when /api/latest URL path is requested
 app.use(require('./routes/latest'));
-//static returns index.html page
-app.use(express.static('./public'));
+app.use(require('./routes/index'));
 app.get('*', function(req, res) {
 	//search parameters
 	res.writeHead(200, 'text/html');
