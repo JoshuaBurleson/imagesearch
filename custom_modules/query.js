@@ -4,6 +4,7 @@ var formatResult = require("./formatResult");
 //define parameters which will be provided in our search
 var auth = process.env.AUTH_KEY //Google API Key
 cx = process.env.CX //Custom Google Search Engine
+console.log(auth, cx);
 num = 10, //results per page
 	searchType = 'image';
 
