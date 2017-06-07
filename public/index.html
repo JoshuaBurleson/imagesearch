@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]>
+<html lang="en" class="oldie">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta content='width=device-width, initial-scale=1' name='viewport'>
+	<title>Image Search API</title>
+	<meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+	<meta content="Google Image Search API Project" name="description">
+	<meta content="Joshua Burleson" name="author">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"><!--
+Copyright (c) 2017 by Joshua Burleson (https://github.com/JoshuaBurleson)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+	<style>
+	   a{
+	 cursor : pointer;
+	}
+	</style>
+</head>
+<body>
+	<div class='text-center fluid-container'>
+		<h1>Image Search API</h1>
+		<h2>How to use this API</h2>
+		<h3>Retrieving JSON results for an image search</h3><code>https://imgsrchapi.herokuapp.com/freecodecamp</code>
+		<h4>Will retrieve a 10 item JSON object such as <a href='https://imgsrchapi.herokuapp.com/freecodecamp'>this</a></h4>
+		<h4>Each item will have the following format:</h4><code>{"url":The URL of the image itself,"altText":The alternative text for the image,"thumbnail": URL to a thumbnail of the image as used by Google Image Search results,"context":The URL wherein the image was located by Google on the web}</code><br>
+		<h3>Paginating through results</h3>
+		<h4>Each search will yield up to 10 pages of results which may be paginated through</h4>
+		<h4>Utilize the "offset" query in your search URL as follows:</h4><code>https://imgsrchapi.herokuapp.com/freecodecamp?offset=3</code>
+		<h5>Note that entering an offset value greater than 10 or less than one will return the first page of results</h5>
+		<h3>Browsing recent searches</h3>
+		<h4>The search term and time of the 10 most recent searches is viewable by via:</h4><code>https://imgsrchapi.herokuapp.com/api/latest</code><br>
+		<br>
+		<h5>This API is a <a href='https://freecodecamp.com' target="_blank">freeCodeCamp</a> project. Your input is welcome and appeciated <a href="mailto:shojukempo@gmail.com" target="_blank">click here to contact me</a></h5>
+	</div>
+</body>
+</html>
