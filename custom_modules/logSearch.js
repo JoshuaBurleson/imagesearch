@@ -2,6 +2,9 @@ const mongo = require('mongodb').MongoClient;
 var dbPath = process.env.DB;
 
 function logSearch(search) {
+	if(search == "favicon.ico"){
+		return;
+	}
 	//connect to database
 	mongo.connect(dbPath, function(err, db) {
 		if (err) {
