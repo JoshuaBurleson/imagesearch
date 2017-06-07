@@ -19,6 +19,7 @@
   "homepage": "https://github.com/JoshuaBurleson/imagesearch#readme",
   "dependencies": {
     "express": "^4.15.3",
+    "googleapis": "^19.0.0",
     "mongodb": "^2.2.28",
     "nodemon": "^1.11.0"
   }
